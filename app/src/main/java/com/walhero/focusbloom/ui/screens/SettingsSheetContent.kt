@@ -1,6 +1,5 @@
 package com.walhero.focusbloom.ui.screens
 
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -44,14 +43,12 @@ import com.walhero.focusbloom.data.ThemeMode
 fun SettingsSheetContent(
     themeMode: ThemeMode,
     privacyOptionsRequired: Boolean,
+    selectedLanguage: String,
     onThemeModeSelected: (ThemeMode) -> Unit,
     onPrivacyOptions: () -> Unit,
     onLanguageSelected: (String) -> Unit,
     onClose: () -> Unit,
 ) {
-    val applicationLocales = AppCompatDelegate.getApplicationLocales()
-    val selectedLanguage = if (applicationLocales.isEmpty) "" else applicationLocales[0]?.language.orEmpty()
-
     Column(
         modifier = Modifier
             .fillMaxWidth()

@@ -44,7 +44,6 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.walhero.focusbloom.R
@@ -83,11 +82,11 @@ fun FocusBloomRoot(
     var destination by rememberSaveable { mutableStateOf(Destination.FOCUS) }
     var settingsVisible by rememberSaveable { mutableStateOf(false) }
     val snackbarHostState = remember { SnackbarHostState() }
-    val context = LocalContext.current
+    val sessionCompleteMessage = stringResource(R.string.session_complete)
 
-    LaunchedEffect(Unit) {
+    LaunchedEffect(sessionCompleteMessage) {
         viewModel.sessionCompleted.collect {
-            snackbarHostState.showSnackbar(context.getString(R.string.session_complete))
+            snackbarHostState.showSnackbar(sessionCompleteMessage)
         }
     }
 

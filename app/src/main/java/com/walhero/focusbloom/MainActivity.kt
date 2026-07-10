@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         consentManager = ConsentManager(this)
+        val selectedLanguage = AppCompatDelegate.getApplicationLocales()[0]?.language.orEmpty()
 
         setContent {
             val viewModel: FocusBloomViewModel = viewModel()
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                     viewModel = viewModel,
                     adsReady = adsReady,
                     privacyOptionsRequired = privacyOptionsRequired,
+                    selectedLanguage = selectedLanguage,
                     onPrivacyOptions = {
                         consentManager.showPrivacyOptions(this) {
                             privacyOptionsRequired = consentManager.isPrivacyOptionsRequired

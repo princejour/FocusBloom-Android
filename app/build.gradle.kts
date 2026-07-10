@@ -7,8 +7,16 @@ plugins {
 
 val sampleAdMobAppId = "ca-app-pub-3940256099942544~3347511713"
 val sampleBannerAdUnitId = "ca-app-pub-3940256099942544/6300978111"
-val adMobAppId = providers.gradleProperty("ADMOB_APP_ID").orElse(sampleAdMobAppId).get()
-val bannerAdUnitId = providers.gradleProperty("ADMOB_BANNER_ID").orElse(sampleBannerAdUnitId).get()
+val adMobAppId = providers.gradleProperty("ADMOB_APP_ID")
+    .orNull
+    .orEmpty()
+    .trim()
+    .ifEmpty { sampleAdMobAppId }
+val bannerAdUnitId = providers.gradleProperty("ADMOB_BANNER_ID")
+    .orNull
+    .orEmpty()
+    .trim()
+    .ifEmpty { sampleBannerAdUnitId }
 val releaseKeystorePath = System.getenv("KEYSTORE_PATH")
 
 android {
@@ -19,8 +27,8 @@ android {
         applicationId = "com.walhero.focusbloom"
         minSdk = 23
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true

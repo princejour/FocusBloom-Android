@@ -74,6 +74,7 @@ fun FocusBloomRoot(
     viewModel: FocusBloomViewModel,
     adsReady: Boolean,
     privacyOptionsRequired: Boolean,
+    selectedLanguage: String,
     onPrivacyOptions: () -> Unit,
     onLanguageSelected: (String) -> Unit,
 ) {
@@ -165,6 +166,7 @@ fun FocusBloomRoot(
             SettingsSheetContent(
                 themeMode = appState.themeMode,
                 privacyOptionsRequired = privacyOptionsRequired,
+                selectedLanguage = selectedLanguage,
                 onThemeModeSelected = viewModel::setThemeMode,
                 onPrivacyOptions = onPrivacyOptions,
                 onLanguageSelected = onLanguageSelected,

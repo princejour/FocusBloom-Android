@@ -13,7 +13,7 @@ val releaseKeystorePath = System.getenv("KEYSTORE_PATH")
 
 android {
     namespace = "com.walhero.focusbloom"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.walhero.focusbloom"

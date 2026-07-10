@@ -1,5 +1,7 @@
 # FocusBloom
 
+[![Android CI](https://github.com/princejour/FocusBloom-Android/actions/workflows/android.yml/badge.svg)](https://github.com/princejour/FocusBloom-Android/actions/workflows/android.yml)
+
 FocusBloom is a polished, offline-first Android app for focus sessions, daily habits, tasks, breathing, and private progress insights. It is built with Kotlin and Jetpack Compose and targets Android 16 (API 36).
 
 ## What is included

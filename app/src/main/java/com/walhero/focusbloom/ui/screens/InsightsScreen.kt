@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.weight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -29,6 +28,7 @@ import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
@@ -46,10 +46,12 @@ import com.walhero.focusbloom.util.bestStreak
 import com.walhero.focusbloom.util.dayLabel
 import com.walhero.focusbloom.util.lastSevenDays
 import com.walhero.focusbloom.util.sessionsByDay
+import androidx.core.os.ConfigurationCompat
 import java.util.Locale
 
 @Composable
 fun InsightsScreen(appState: AppState) {
+    val locale = ConfigurationCompat.getLocales(LocalConfiguration.current)[0] ?: Locale.ROOT
     val days = lastSevenDays()
     val dailyMinutes = sessionsByDay(appState.sessions, days)
     val weekDates = days.map { it.toString() }.toSet()
@@ -116,7 +118,7 @@ fun InsightsScreen(appState: AppState) {
         item {
             WeeklyFocusCard(
                 values = dailyMinutes,
-                labels = days.map { dayLabel(it, Locale.getDefault()) },
+                labels = days.map { dayLabel(it, locale) },
             )
         }
     }

@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.weight
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Checklist
 import androidx.compose.material.icons.filled.Favorite
@@ -45,7 +44,6 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.walhero.focusbloom.R
@@ -75,6 +73,7 @@ fun FocusBloomRoot(
     viewModel: FocusBloomViewModel,
     adsReady: Boolean,
     privacyOptionsRequired: Boolean,
+    selectedLanguage: String,
     onPrivacyOptions: () -> Unit,
     onLanguageSelected: (String) -> Unit,
 ) {
@@ -83,11 +82,11 @@ fun FocusBloomRoot(
     var destination by rememberSaveable { mutableStateOf(Destination.FOCUS) }
     var settingsVisible by rememberSaveable { mutableStateOf(false) }
     val snackbarHostState = remember { SnackbarHostState() }
-    val context = LocalContext.current
+    val sessionCompleteMessage = stringResource(R.string.session_complete)
 
-    LaunchedEffect(Unit) {
+    LaunchedEffect(sessionCompleteMessage) {
         viewModel.sessionCompleted.collect {
-            snackbarHostState.showSnackbar(context.getString(R.string.session_complete))
+            snackbarHostState.showSnackbar(sessionCompleteMessage)
         }
     }
 
@@ -166,6 +165,7 @@ fun FocusBloomRoot(
             SettingsSheetContent(
                 themeMode = appState.themeMode,
                 privacyOptionsRequired = privacyOptionsRequired,
+                selectedLanguage = selectedLanguage,
                 onThemeModeSelected = viewModel::setThemeMode,
                 onPrivacyOptions = onPrivacyOptions,
                 onLanguageSelected = onLanguageSelected,

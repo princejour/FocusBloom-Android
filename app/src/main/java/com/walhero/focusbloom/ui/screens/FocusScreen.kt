@@ -39,6 +39,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -58,7 +59,9 @@ import com.walhero.focusbloom.util.formatTimer
 import com.walhero.focusbloom.util.formattedToday
 import com.walhero.focusbloom.util.isCompletedToday
 import com.walhero.focusbloom.util.todayIso
+import androidx.core.os.ConfigurationCompat
 import java.time.LocalDate
+import java.util.Locale
 
 @Composable
 fun FocusScreen(
@@ -72,6 +75,7 @@ fun FocusScreen(
     val context = LocalContext.current
     val prompts = context.resources.getStringArray(R.array.daily_prompts)
     val prompt = prompts[(LocalDate.now().dayOfYear - 1) % prompts.size]
+    val locale = ConfigurationCompat.getLocales(LocalConfiguration.current)[0] ?: Locale.ROOT
     val today = todayIso()
     val todayMinutes = appState.sessions.filter { it.date == today }.sumOf { it.durationMinutes }
     val habitsDone = appState.habits.count { it.isCompletedToday() }
@@ -86,7 +90,7 @@ fun FocusScreen(
         item {
             Column {
                 Text(
-                    text = formattedToday(),
+                    text = formattedToday(locale),
                     style = MaterialTheme.typography.labelLarge,
                     color = MaterialTheme.colorScheme.primary,
                 )

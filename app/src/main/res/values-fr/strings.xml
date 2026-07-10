@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FocusBloom</string>
+    <string name="tagline">Petits pas. Concentration profonde. Vrais progrès.</string>
+    <string name="nav_focus">Focus</string>
+    <string name="nav_habits">Habitudes</string>
+    <string name="nav_tasks">Tâches</string>
+    <string name="nav_insights">Progrès</string>
+    <string name="nav_calm">Calme</string>
+    <string name="settings">Réglages</string>
+    <string name="onboarding_title_1">Faites place à l’essentiel</string>
+    <string name="onboarding_body_1">Travaillez sans distraction et terminez ce qui compte vraiment.</string>
+    <string name="onboarding_title_2">Avancez un jour à la fois</string>
+    <string name="onboarding_body_2">Créez des habitudes simples et gardez le rythme sans pression.</string>
+    <string name="onboarding_title_3">Voyez vos progrès fleurir</string>
+    <string name="onboarding_body_3">Des statistiques privées et hors ligne révèlent vos meilleurs jours.</string>
+    <string name="next">Suivant</string>
+    <string name="get_started">Commencer</string>
+    <string name="skip">Passer</string>
+    <string name="ready_to_bloom">Prêt à progresser ?</string>
+    <string name="today_message">Choisissez une chose importante et accordez-lui toute votre attention.</string>
+    <string name="focus_session">Session de concentration</string>
+    <string name="select_duration">Choisissez la durée</string>
+    <string name="minutes_short">%1$d min</string>
+    <string name="start">Démarrer</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Reprendre</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="session_complete">Bravo ! Votre session est terminée.</string>
+    <string name="today_progress">Progrès du jour</string>
+    <string name="focus_minutes">Minutes de focus</string>
+    <string name="habits_done">Habitudes faites</string>
+    <string name="tasks_done">Tâches faites</string>
+    <string name="quick_calm">Besoin d’une pause rapide ?</string>
+    <string name="quick_calm_body">Essayez un cycle de respiration guidée avant la prochaine session.</string>
+    <string name="open_breathing">Respirer</string>
+    <string name="habits_title">Habitudes quotidiennes</string>
+    <string name="habits_subtitle">La régularité dépasse l’intensité.</string>
+    <string name="add_habit">Ajouter une habitude</string>
+    <string name="habit_name">Nom de l’habitude</string>
+    <string name="choose_icon">Choisissez une icône</string>
+    <string name="no_habits_title">Plantez votre première habitude</string>
+    <string name="no_habits_body">Gardez-la assez simple pour la répéter chaque jour.</string>
+    <string name="current_streak">Série actuelle</string>
+    <string name="days_count">%1$d jours</string>
+    <string name="completed_today">Terminée aujourd’hui</string>
+    <string name="mark_complete">Marquer comme faite</string>
+    <string name="tasks_title">Tâches du jour</string>
+    <string name="tasks_subtitle">Une liste claire allège l’esprit.</string>
+    <string name="add_task">Ajouter une tâche</string>
+    <string name="task_hint">Qu’est-ce qui mérite votre attention ?</string>
+    <string name="filter_all">Toutes</string>
+    <string name="filter_open">À faire</string>
+    <string name="filter_done">Terminées</string>
+    <string name="no_tasks_title">Votre liste est vide</string>
+    <string name="no_tasks_body">Ajoutez une tâche quand vous le souhaitez.</string>
+    <string name="clear_completed">Effacer les terminées</string>
+    <string name="insights_title">Vos progrès</string>
+    <string name="insights_subtitle">Le progrès devient concret quand on peut le voir.</string>
+    <string name="this_week">Cette semaine</string>
+    <string name="total_focus">Focus total</string>
+    <string name="sessions">Sessions</string>
+    <string name="best_streak">Meilleure série</string>
+    <string name="completion">Accomplissement</string>
+    <string name="weekly_focus">Focus par jour</string>
+    <string name="calm_title">Espace de respiration</string>
+    <string name="calm_subtitle">Un rythme doux 4–4–6 pour apaiser votre attention.</string>
+    <string name="breathe_in">Inspirez</string>
+    <string name="hold">Retenez</string>
+    <string name="breathe_out">Expirez</string>
+    <string name="breathing_ready">Prêt</string>
+    <string name="begin_breathing">Commencer</string>
+    <string name="pause_breathing">Mettre en pause</string>
+    <string name="calm_tip_title">Petit rappel</string>
+    <string name="calm_tip_body">Détendez la mâchoire, baissez les épaules et prolongez l’expiration.</string>
+    <string name="appearance">Apparence</string>
+    <string name="theme_system">Système</string>
+    <string name="theme_light">Clair</string>
+    <string name="theme_dark">Sombre</string>
+    <string name="language">Langue</string>
+    <string name="language_system">Langue de l’appareil</string>
+    <string name="language_english">English</string>
+    <string name="language_arabic">العربية</string>
+    <string name="language_french">Français</string>
+    <string name="privacy">Confidentialité</string>
+    <string name="privacy_choices">Choix de confidentialité</string>
+    <string name="privacy_choices_body">Consultez ou modifiez vos choix liés à la publicité.</string>
+    <string name="about">À propos de FocusBloom</string>
+    <string name="about_body">Un espace calme et privé pour se concentrer et progresser.</string>
+    <string name="local_first">Vos progrès restent sur cet appareil</string>
+    <string name="local_first_body">FocusBloom ne demande aucun compte et conserve localement vos tâches, habitudes et sessions.</string>
+    <string name="ads_note">La publicité permet de garder FocusBloom gratuit. Des identifiants de test sont utilisés jusqu’à l’ajout des identifiants AdMob du diffuseur.</string>
+    <string name="version_label">Version %1$s</string>
+    <string name="close">Fermer</string>
+    <string name="cancel">Annuler</string>
+    <string name="add">Ajouter</string>
+    <string name="delete">Supprimer</string>
+    <string name="delete_habit_title">Supprimer cette habitude ?</string>
+    <string name="delete_habit_body">Sa série sera supprimée de cet appareil.</string>
+    <string name="settings_description">Ouvrir les réglages</string>
+    <string name="timer_description">Minuteur de concentration</string>
+    <string name="previous">Précédent</string>
+    <string name="day_minutes">%1$d</string>
+    <string name="progress_percent">%1$d%%</string>
+    <string name="streak_one_day">1 jour</string>
+    <string name="not_available">Pas encore disponible</string>
+
+    <string-array name="daily_prompts">
+        <item>Protégez votre attention : elle façonne votre journée.</item>
+        <item>Bien fait vaut mieux que parfait en théorie.</item>
+        <item>Un seul bloc de focus peut transformer l’après-midi.</item>
+        <item>Commencez doucement, l’élan viendra.</item>
+        <item>Votre futur grandit grâce aux petits choix d’aujourd’hui.</item>
+        <item>Écartez le bruit, puis faites la prochaine chose juste.</item>
+        <item>Le repos fait partie du progrès.</item>
+    </string-array>
+</resources>

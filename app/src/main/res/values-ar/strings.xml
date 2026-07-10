@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FocusBloom</string>
+    <string name="tagline">خطوات صغيرة، تركيز عميق، وتقدّم حقيقي.</string>
+    <string name="nav_focus">التركيز</string>
+    <string name="nav_habits">العادات</string>
+    <string name="nav_tasks">المهام</string>
+    <string name="nav_insights">الإحصائيات</string>
+    <string name="nav_calm">الهدوء</string>
+    <string name="settings">الإعدادات</string>
+    <string name="onboarding_title_1">افسح مجالًا لما يهمّك</string>
+    <string name="onboarding_body_1">استعمل جلسات تركيز بلا تشتيت وأنجز عملك المهم.</string>
+    <string name="onboarding_title_2">تقدّم يومًا بعد يوم</string>
+    <string name="onboarding_body_2">كوّن عادات بسيطة وحافظ على استمراريتك دون ضغط.</string>
+    <string name="onboarding_title_3">شاهد تقدّمك يزدهر</string>
+    <string name="onboarding_body_3">إحصائيات خاصة تعمل دون إنترنت وتساعدك على فهم أفضل أيامك.</string>
+    <string name="next">التالي</string>
+    <string name="get_started">ابدأ الآن</string>
+    <string name="skip">تخطّ</string>
+    <string name="ready_to_bloom">هل أنت مستعد للازدهار؟</string>
+    <string name="today_message">اختر أمرًا مهمًا واحدًا وامنحه كامل انتباهك.</string>
+    <string name="focus_session">جلسة تركيز</string>
+    <string name="select_duration">اختر المدّة</string>
+    <string name="minutes_short">%1$d دق</string>
+    <string name="start">ابدأ</string>
+    <string name="pause">إيقاف مؤقت</string>
+    <string name="resume">واصل</string>
+    <string name="reset">إعادة</string>
+    <string name="session_complete">عمل رائع! أكملت جلسة التركيز.</string>
+    <string name="today_progress">تقدّم اليوم</string>
+    <string name="focus_minutes">دقائق التركيز</string>
+    <string name="habits_done">عادات مكتملة</string>
+    <string name="tasks_done">مهام مكتملة</string>
+    <string name="quick_calm">هل تحتاج إلى استراحة قصيرة؟</string>
+    <string name="quick_calm_body">جرّب دورة تنفّس موجّهة قبل جلستك التالية.</string>
+    <string name="open_breathing">تنفّس الآن</string>
+    <string name="habits_title">العادات اليومية</string>
+    <string name="habits_subtitle">الاستمرار أهم من الشدّة.</string>
+    <string name="add_habit">إضافة عادة</string>
+    <string name="habit_name">اسم العادة</string>
+    <string name="choose_icon">اختر رمزًا</string>
+    <string name="no_habits_title">ازرع عادتك الأولى</string>
+    <string name="no_habits_body">اجعلها بسيطة حتى تقدر على تكرارها كل يوم.</string>
+    <string name="current_streak">سلسلة الاستمرار</string>
+    <string name="days_count">%1$d أيام</string>
+    <string name="completed_today">مكتملة اليوم</string>
+    <string name="mark_complete">إكمال العادة</string>
+    <string name="tasks_title">مهام اليوم</string>
+    <string name="tasks_subtitle">القائمة الواضحة تمنحك ذهنًا أخف.</string>
+    <string name="add_task">إضافة مهمة</string>
+    <string name="task_hint">ما الذي يحتاج إلى انتباهك؟</string>
+    <string name="filter_all">الكل</string>
+    <string name="filter_open">المفتوحة</string>
+    <string name="filter_done">المكتملة</string>
+    <string name="no_tasks_title">قائمتك فارغة</string>
+    <string name="no_tasks_body">أضف مهمة عندما تكون مستعدًا.</string>
+    <string name="clear_completed">حذف المكتملة</string>
+    <string name="insights_title">إحصائياتك</string>
+    <string name="insights_subtitle">يسهل الوثوق بالتقدّم عندما تراه.</string>
+    <string name="this_week">هذا الأسبوع</string>
+    <string name="total_focus">إجمالي التركيز</string>
+    <string name="sessions">الجلسات</string>
+    <string name="best_streak">أفضل سلسلة</string>
+    <string name="completion">نسبة الإنجاز</string>
+    <string name="weekly_focus">التركيز حسب اليوم</string>
+    <string name="calm_title">مساحة للتنفّس</string>
+    <string name="calm_subtitle">نسق لطيف 4–4–6 يساعدك على تهدئة انتباهك.</string>
+    <string name="breathe_in">شهيق</string>
+    <string name="hold">احبس النفس</string>
+    <string name="breathe_out">زفير</string>
+    <string name="breathing_ready">مستعد</string>
+    <string name="begin_breathing">ابدأ التنفّس</string>
+    <string name="pause_breathing">إيقاف مؤقت</string>
+    <string name="calm_tip_title">تذكير صغير</string>
+    <string name="calm_tip_body">أرخِ فكّك، اخفض كتفيك، واجعل الزفير أطول.</string>
+    <string name="appearance">المظهر</string>
+    <string name="theme_system">حسب الهاتف</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="language">اللغة</string>
+    <string name="language_system">لغة الهاتف</string>
+    <string name="language_english">English</string>
+    <string name="language_arabic">العربية</string>
+    <string name="language_french">Français</string>
+    <string name="privacy">الخصوصية</string>
+    <string name="privacy_choices">خيارات الخصوصية</string>
+    <string name="privacy_choices_body">راجع أو غيّر اختيارات خصوصية الإعلانات.</string>
+    <string name="about">حول FocusBloom</string>
+    <string name="about_body">مساحة هادئة وخاصة للتركيز والعادات والتقدّم اليومي.</string>
+    <string name="local_first">تقدّمك يبقى على هذا الهاتف</string>
+    <string name="local_first_body">لا يحتاج FocusBloom إلى حساب، ويحفظ مهامك وعاداتك وجلساتك محليًا.</string>
+    <string name="ads_note">تساعد الإعلانات على إبقاء FocusBloom مجانيًا. التطبيق يستعمل معرّفات إعلانات تجريبية حتى يضيف الناشر معرّفات AdMob الحقيقية.</string>
+    <string name="version_label">الإصدار %1$s</string>
+    <string name="close">إغلاق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="add">إضافة</string>
+    <string name="delete">حذف</string>
+    <string name="delete_habit_title">حذف هذه العادة؟</string>
+    <string name="delete_habit_body">سيتم حذف سلسلة الاستمرار من هذا الهاتف.</string>
+    <string name="settings_description">فتح الإعدادات</string>
+    <string name="timer_description">مؤقّت التركيز</string>
+    <string name="previous">السابق</string>
+    <string name="day_minutes">%1$d</string>
+    <string name="progress_percent">%1$d%%</string>
+    <string name="streak_one_day">يوم واحد</string>
+    <string name="not_available">غير متاح حاليًا</string>
+
+    <string-array name="daily_prompts">
+        <item>احمِ انتباهك، فهو الذي يصنع يومك.</item>
+        <item>الإنجاز المتقن خير من كمال لا يبدأ.</item>
+        <item>فترة تركيز واحدة قد تغيّر يومك كاملًا.</item>
+        <item>ابدأ بهدوء، وسيأتيك الزخم.</item>
+        <item>مستقبلك ينمو من اختيارات اليوم الصغيرة.</item>
+        <item>أبعد الضجيج ثم أنجز الخطوة الصادقة التالية.</item>
+        <item>الراحة جزء من التقدّم وليست نقيضه.</item>
+    </string-array>
+</resources>
